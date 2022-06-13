@@ -3,69 +3,7 @@
 
 
 
-/* 팝업창 */
-.popup{
-  position: fixed;
-  top: 10%; left: 20%;
-  background: rgba(255,255,255,0.7);
-  border: 1px solid #444;
-  padding: 240px;
-  z-index: 9999;
-  border-radius: 5px;
 
-}
-.popup .popTxt p{
-  font-size: 45px;
-  line-height: 80px;
-}
-.popup .popTxt p strong{
-  color: #5ed3e2;
-}
-
-.popup form{
-  margin-top: 35px;
-  font-size: 14px;
-  width: 100%;
-  background: #5ed3e2;
-  border-radius: 5px;
-  color: #444;
-}
-.popup form input[type="checkbox"]{
-  display: none;
-}
-.popup form input[type="checkbox"] + label{
-  position: relative;
-  display: inline-block;
-  width: 15px; height: 15px;
-  border: 1px solid #444;
-  vertical-align: middle;
-  margin: 0 15px 0 20px;
-  cursor: pointer;
-}
-.popup form input[id="check"]:checked + label:after{
-  content: '\f00c';
-  position: absolute;
-  top: -1px; left: 0;
-  font-size: 12px;
-  width: 15px; height: 15px;
-  text-align: center;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-}
-.popup form span.close{
-  position: relative;
-  display: inline-block;
-  margin-left: 40px;
-  padding: 10px;
-  cursor: pointer;
-}
-.popup form span.close::after{
-  position: absolute;
-  top: 12px; left: -18px;
-  content: '';
-  width: 1px; height: 45%;
-  background: #777;
-}
 
 html{cursor: url(../images/mouse.png), auto}
 body{font-family:'Noto Sans KR',sans-serif; color:#2b2b2b;}
